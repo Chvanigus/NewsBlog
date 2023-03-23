@@ -1,7 +1,6 @@
 """ Настройка админки"""
 
 from django.contrib import admin
-from mptt.admin import MPTTModelAdmin
 from mptt.admin import DraggableMPTTAdmin
 from .models import Rubric, Article
 
