@@ -2,7 +2,8 @@
 
 from django.contrib import admin
 from mptt.admin import DraggableMPTTAdmin
-from .models import Rubric, Article
+
+from .models import Article, Rubric
 
 admin.site.register(
         Rubric,

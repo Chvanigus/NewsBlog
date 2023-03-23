@@ -1,4 +1,4 @@
-import { $$ } from "./utils.js";
+import {$$} from "./utils.js";
 
 function insertBrowserTiming() {
     const timingOffset = performance.timing.navigationStart,

@@ -1,10 +1,10 @@
 """ Кастомные теги для приложения News"""
 
 from django import template
+from django.db.models import F
+from django.db.models.aggregates import Count
 
 from news.models import Category
-from django.db.models.aggregates import Count
-from django.db.models import F
 
 register = template.Library()
 

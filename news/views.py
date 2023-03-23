@@ -1,14 +1,14 @@
 """ Контроллер приложения News"""
 
-from django.shortcuts import render, redirect
-from django.views.generic import ListView, DetailView, CreateView
-from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib import messages
 from django.contrib.auth import login, logout
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.mail import send_mail
+from django.shortcuts import redirect, render
+from django.views.generic import CreateView, DetailView, ListView
 
-from .models import News, Category
-from .forms import NewsForm, UserRegisterForm, UserLoginForm, ContactForm
+from .forms import ContactForm, NewsForm, UserLoginForm, UserRegisterForm
+from .models import Category, News
 
 
 def contact(request):

@@ -1,4 +1,4 @@
-import { $$, ajax, replaceToolbarState, debounce } from "./utils.js";
+import {$$, ajax, debounce, replaceToolbarState} from "./utils.js";
 
 function onKeyDown(event) {
     if (event.keyCode === 27) {

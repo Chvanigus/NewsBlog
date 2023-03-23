@@ -1,8 +1,8 @@
-from django.contrib import admin
 from ckeditor_uploader.widgets import CKEditorUploadingWidget
 from django import forms
+from django.contrib import admin
 
-from .models import News, Category
+from .models import Category, News
 
 
 class NewsAdminForm(forms.ModelForm):
